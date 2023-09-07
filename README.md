@@ -1,12 +1,15 @@
 # Currency Conversion Web
 
-A website to exchange cost between some currencies.
-
 **#EJS
 #CSS
 #JS
 #Bootstrap
 #NodeJS**
+
+A website to exchange cost between some currencies.
+
+Using API from https://www.exchangerate-api.com/.
+
 
 ## Date
 31/8/2023 - 7/9/2023
