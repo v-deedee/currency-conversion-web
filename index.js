@@ -31,14 +31,11 @@ app.post("/submit", async (req, res) => {
         exchanged_currency = req.body["exchanged-currency"];
         amount = req.body["amount"];
         if (chosen_currency == "" || exchanged_currency == "" || amount == 0) {
-            amount = 0;
-            result = 0;
-            chosen_currency = "";
-            exchanged_currency = "";
             success = false;
         } else {
             const response = await axios.get(`https://v6.exchangerate-api.com/v6/${API_key}/latest/${chosen_currency}`);
-            result = response.data.conversion_rates[exchanged_currency] * parseInt(amount);
+            const preResult = response.data.conversion_rates[exchanged_currency] * parseInt(amount);
+            result = Math.round(preResult * 10) / 10.0;
             success = true;
         }
         res.redirect("/");

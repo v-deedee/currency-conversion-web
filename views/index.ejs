@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-auto">
                     <label for="currency-1" class="form-label" style="display: block;">Currency:</label>
-                    <select name="chosen-currency" id="currency-1">
+                    <select name="chosen-currency" id="currency-1" class="form-select">
                         <option value="" class="">Choose Currency</option>
                         <% currency_list.forEach(e => { %>
                             <% if (e.code == chosen_currency) { %>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-auto">
                     <label for="currency-2" class="form-label" style="display: block;">Currency:</label>
-                    <select name="exchanged-currency" id="currency-2">
+                    <select name="exchanged-currency" id="currency-2" class="form-select">
                         <option value="" class="">Choose Currency</option>
                         <% currency_list.forEach(e => { %>
                             <% if (e.code == exchanged_currency) { %>
