@@ -14,7 +14,10 @@ Using API from https://www.exchangerate-api.com/.
 ## Date
 31/8/2023 - 7/9/2023
 
-## Running the program
+## Deployment
+Visit https://currency-conversion-web.onrender.com/
+
+## Running the program locally
 
 Clone this repo:
 
@@ -33,6 +36,6 @@ Go to http://localhost:3000.
 
 And you get a screen like this:
 
-![image](https://github.com/v-deedee/currency-conversion-web/assets/100273875/77195dd1-8203-4e7e-80e8-dc3c3b3b6105)
+![image](https://github.com/v-deedee/currency-conversion-web/assets/100273875/24fe58f1-7d21-4ff7-af42-240ec58fe4f6)
 
 Try it yourself!!!
