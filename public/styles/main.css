@@ -4,11 +4,14 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     background: #FBFBAF;
+}
+
+.fixed-width {
+    width: 220px;
 }
 
 .title {
@@ -25,16 +28,16 @@ body {
 }
 
 .center-side {
-    width: 75%;
+    /* width: 75%; */
     text-align: center;
     margin: auto;
     margin-top: 50px;
-    padding: 10px 0;
+    padding: 30px 0;
     margin-bottom: 50px;
     font-family: 'Lora', serif;
     font-weight: bold;
-    border-top: #333 solid 2px;
-    border-bottom: #333 solid 2px;
+    /* border-top: #333333 solid 2px;
+    border-bottom: #333333 solid 2px; */
 }
 
 .second-side {
@@ -43,8 +46,17 @@ body {
     margin-bottom: 75px;
 }
 
+#result {
+    color: #ff0000;
+    font-weight: 700;
+}
+
 .submit-side {
-    width: 50%;
+    width: 40%;
     margin: auto;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+}
+
+.submit-side button {
+    padding: 0.5rem;
 }

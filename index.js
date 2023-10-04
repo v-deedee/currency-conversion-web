@@ -34,7 +34,7 @@ app.post("/submit", async (req, res) => {
             success = false;
         } else {
             const response = await axios.get(`https://v6.exchangerate-api.com/v6/${API_key}/latest/${chosen_currency}`);
-            const preResult = response.data.conversion_rates[exchanged_currency] * parseInt(amount);
+            const preResult = response.data.conversion_rates[exchanged_currency] * parseFloat(amount);
             result = Math.round(preResult * 10) / 10.0;
             success = true;
         }
